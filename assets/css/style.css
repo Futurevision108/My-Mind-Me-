@@ -1,0 +1,37 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Asterisk wildcard selector to override default style added by browser*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*General styles*/
+body{
+    min-height: 100vh;
+    display: flex;
+   flex-direction: column;
+/*generic project styles*/
+color: #333;
+font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: lightskyblue;}
+    /*font for <h1> under header for logo */
+    h1{
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    main{
+        background-color:rgb(126, 207, 191) ;
+        /*Make main element take up any surplus space to push footer to bottom of the page*/
+        flex:1 0 auto ;
+    }
+    footer{background-color: rgb(177, 183, 57);
+
+    }
+
+
