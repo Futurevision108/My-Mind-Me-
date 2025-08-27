@@ -8,7 +8,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /*General styles*/
+
 body{
     min-height: 100vh;
     display: flex;
@@ -17,21 +19,99 @@ body{
 color: #333;
 font-family: 'Montserrat', sans-serif;
 }
+/*header styles*/
 
 header{
-    background-color: lightskyblue;}
+background-color:#005eb8;
+padding:0 1 rem;
+width :100% ;
+z-index:99 ;
+box-shadow: 0 2px 2px #3a3a3a;
+position:fixed;
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+}
+header a{
+text-decoration: none;
+color: rgb(16, 13, 13);
+}
     /*font for <h1> under header for logo */
     h1{
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif;        
+        text-transform: uppercase;
+        letter:0.1rem;
     }
 
-    main{
+    /*logo styles*/
+    #logo{   
+        font-size: 2.5rem;
+        font-weight: bold;
+        color:#ffffff;;       
+    }
+    /*navigation bar styles*/
+    nav{         
+        margin: left 1.5rem;
+        font-size: 1.2rem; ;
+        padding: 1rem;
+    }
+
+    /*id nav-links styles*/
+    #nav-links{
+        list-style-type: none;
+        display: flex;      
+        gap: 1.5rem;
+        font-size: 110%;
+    }
+    /*list item inside nav*/
+    #nav-links>li{
+        margin-left: 1.5em;
+        text-decoration: none;
+        color: rgb(16, 13, 13);
+        font-weight: bold;
+    }
+    /*making the list items active*/
+    .active{
+        color: black;
+        border-bottom: 2px solid black;
+        
+    }
+    /*navbar styles with dropdown toggle*/
+    nav{
+        position: absolute;
+        background-color:#ffffff;        
+        width :100% ; 
+        box-shadow: 0 2px 2px #3a3a3a;
+        left:0 ;
+        padding:1rem 0 ;   ;
+        display: none;
+        top: 100% ;
+    }
+     /*checkbox styles Nav toggle*/ 
+    #nav-toggle:checked~nav{
+        display: block;}
+
+        #nav-toggle{
+           display: none;
+        }
+
+    /*label styles for nav toggle*/
+    .nav-toggle-label{
+            font-size: 2rem;}
+
+
+
+    /*navigation links styles*/
+        main{
         background-color:rgb(126, 207, 191) ;
         /*Make main element take up any surplus space to push footer to bottom of the page*/
         flex:1 0 auto ;
+        margin-top: 55px;
+        
+
+
     }
     footer{background-color: rgb(177, 183, 57);
 
     }
-
 
